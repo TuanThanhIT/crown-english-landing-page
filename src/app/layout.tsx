@@ -13,8 +13,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="vi">
-      <body>{children}</body>
+    <html lang="vi" suppressHydrationWarning>
+      <head><script dangerouslySetInnerHTML={{ __html: `(function(){var t;try{t=localStorage.getItem("crown-theme")}catch(e){}document.documentElement.dataset.theme=t==="light"||t==="dark"?t:window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"})()` }} /></head>
+      <body><div className="site-background" aria-hidden="true" /><div className="site-content">{children}</div></body>
     </html>
   );
 }

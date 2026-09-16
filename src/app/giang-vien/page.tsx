@@ -19,11 +19,11 @@ const teachers = [
 
 export default function TeachersPage() {
   return (
-    <main className="min-h-screen bg-white text-[#202135]">
+    <main className="min-h-screen bg-transparent text-foreground">
       <Header />
-      <section className="pt-32 pb-20">
+      <section className="bg-background pt-32 pb-20">
         <Container>
-          <p className="mb-5 text-sm font-black uppercase tracking-[0.42em] text-[#ffcc00]">
+          <p className="mb-5 text-sm font-black uppercase tracking-[0.42em] text-accent">
             Giảng viên
           </p>
           <h1 className="max-w-4xl text-5xl font-black leading-tight sm:text-6xl">
@@ -33,17 +33,17 @@ export default function TeachersPage() {
             {teachers.map((teacher) => (
               <article
                 key={teacher.name}
-                className="grid gap-6 rounded-[28px] border border-[#f0e6dd] bg-[#fff8f3] p-7 sm:grid-cols-[140px_1fr] sm:items-center"
+                className="grid gap-6 rounded-[28px] border border-line bg-surface-alt p-7 sm:grid-cols-[140px_1fr] sm:items-center"
               >
-                <div className="grid aspect-square place-items-center rounded-[32px] bg-[#202135] text-5xl font-black text-[#ffcc00]">
+                <div className="grid aspect-square place-items-center rounded-[32px] bg-background text-5xl font-black text-accent">
                   {teacher.name.charAt(0)}
                 </div>
                 <div>
-                  <p className="text-sm font-black uppercase tracking-[0.22em] text-[#c8102e]">
+                  <p className="text-sm font-black uppercase tracking-[0.22em] text-accent">
                     {teacher.role}
                   </p>
                   <h2 className="mt-3 text-3xl font-black">{teacher.name}</h2>
-                  <p className="mt-4 leading-7 text-[#5f6275]">{teacher.description}</p>
+                  <p className="mt-4 leading-7 text-muted">{teacher.description}</p>
                 </div>
               </article>
             ))}

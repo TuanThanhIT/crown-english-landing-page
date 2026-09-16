@@ -10,11 +10,11 @@ const reviews = [
 
 export default function StudentsPage() {
   return (
-    <main className="min-h-screen bg-[#fff8f3] text-[#202135]">
+    <main className="min-h-screen bg-transparent text-foreground">
       <Header />
-      <section className="pt-32 pb-20">
+      <section className="bg-background pt-32 pb-20">
         <Container>
-          <p className="mb-5 text-sm font-black uppercase tracking-[0.42em] text-[#ffcc00]">
+          <p className="mb-5 text-sm font-black uppercase tracking-[0.42em] text-accent">
             Học viên
           </p>
           <h1 className="max-w-4xl text-5xl font-black leading-tight sm:text-6xl">
@@ -22,11 +22,11 @@ export default function StudentsPage() {
           </h1>
           <div className="mt-12 grid gap-6 lg:grid-cols-3">
             {reviews.map((review, index) => (
-              <article key={review} className="rounded-[24px] border border-[#f0e6dd] bg-white p-8">
-                <div className="mb-6 grid size-14 place-items-center rounded-full bg-[#ffcc00] text-xl font-black">
+              <article key={review} className="rounded-[24px] border border-line bg-surface p-8">
+                <div className="mb-6 grid size-14 place-items-center rounded-full brand-panel bg-primary text-xl font-black">
                   {index + 1}
                 </div>
-                <p className="text-lg leading-8 text-[#5f6275]">“{review}”</p>
+                <p className="text-lg leading-8 text-muted">“{review}”</p>
               </article>
             ))}
           </div>
