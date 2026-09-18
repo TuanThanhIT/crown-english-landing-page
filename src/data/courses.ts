@@ -1,11 +1,10 @@
-import type { Course } from "@/types/courses";
+﻿import type { Course } from "@/types/courses";
 
 // Nguồn: ba brochure Crown do người dùng cung cấp và ảnh lộ trình TOEIC.
 // IELTS nhóm và IELTS 1:1 có số buổi, mức điểm và học phí riêng.
 export const courses: Course[] = [
   {
     slug: "ielts",
-    aliases: ["ielts-foundation", "ielts-intensive"],
     title: "IELTS",
     tag: "0 – 7.5+",
     description:
