@@ -17,6 +17,10 @@ export const metadata: Metadata = {
   description:
     "Học IELTS, TOEIC và tiếng Anh giao tiếp theo lộ trình phù hợp với trình độ tại Crown English.",
 
+  verification: {
+    google: "pOixXkHBHh0U1oI5ZNpRNdTgVUVh2tP7wS0Ns6gPcSk",
+  },
+
   openGraph: {
     type: "website",
     locale: "vi_VN",
