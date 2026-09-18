@@ -53,12 +53,9 @@ export default function RootLayout({
         />
       </head>
       <body>
+        <OrganizationJsonLd />
         <div className="site-background" aria-hidden="true" />
-        <div className="site-content">
-          {" "}
-          <OrganizationJsonLd />
-          {children}
-        </div>
+        <div className="site-content"> {children}</div>
       </body>
     </html>
   );

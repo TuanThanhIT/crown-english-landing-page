@@ -5,17 +5,11 @@ const baseUrl =
 export default function OrganizationJsonLd() {
   const jsonLd = {
     "@context": "https://schema.org",
-
     "@type": "EducationalOrganization",
-
     name: "Crown English",
-
     url: baseUrl,
-
     telephone: "0898192633",
-
     email: "ieltsgiaotiepcrown@gmail.com",
-
     address: {
       "@type": "PostalAddress",
       streetAddress: "168/20 Nguyễn Gia Trí, Phường 25, Bình Thạnh",
@@ -29,7 +23,7 @@ export default function OrganizationJsonLd() {
     <script
       type="application/ld+json"
       dangerouslySetInnerHTML={{
-        __html: JSON.stringify(jsonLd),
+        __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c"),
       }}
     />
   );
