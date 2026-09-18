@@ -22,9 +22,21 @@ export const homeHero = {
 };
 
 export const homePrograms = [
-  { title: "IELTS", description: "Online / Offline / Hybrid", href: "/khoa-hoc/ielts" },
-  { title: "IELTS Mentor 1–1", description: "", href: "/khoa-hoc/kem-1-1-ca-nhan-hoa" },
-  { title: "Giao tiếp", description: "Daily topics / Business English", href: "/khoa-hoc/giao-tiep-phan-xa" },
+  {
+    title: "IELTS",
+    description: "Online / Offline / Hybrid",
+    href: "/khoa-hoc/ielts",
+  },
+  {
+    title: "IELTS Mentor 1–1",
+    description: "",
+    href: "/khoa-hoc/kem-1-1-ca-nhan-hoa",
+  },
+  {
+    title: "Giao tiếp",
+    description: "Daily topics / Business English",
+    href: "/khoa-hoc/giao-tiep-phan-xa",
+  },
 ];
 export const homeStats = [
   { value: "5+", label: "năm kinh nghiệm" },
@@ -37,7 +49,7 @@ export const homeFeatureSection = {
   eyebrow: "Cách Crown vận hành",
   title: "Một hệ học gọn, rõ, đo được",
   description:
-    "Flow này học theo nhịp của Violet: headline cô đọng, list nhiều điểm mạnh nhưng scan nhanh, mỗi điểm chỉ nói đúng một lợi ích.",
+    "Mỗi học viên bắt đầu từ đánh giá đầu vào, học theo lộ trình rõ ràng và được theo dõi tiến độ xuyên suốt để biết mình đang cải thiện ở đâu.",
 };
 
 export const homeFeatures = [
@@ -108,7 +120,7 @@ export const homeCommitmentSection = {
   eyebrow: "Cam kết đầu ra",
   title: "Cam kết minh bạch, không nói mơ hồ",
   description:
-    "Điểm này nên đưa nổi bật trên home vì đây là trust signal mạnh của Crown. Nội dung cần nói rõ điều kiện để phụ huynh và học viên hiểu đúng.",
+    "Crown công khai rõ các điều kiện áp dụng để học viên và phụ huynh hiểu đúng phạm vi cam kết và trách nhiệm của hai bên trong suốt quá trình học.",
   conditionTitle: "Điều kiện áp dụng",
 };
 
@@ -130,7 +142,7 @@ export const homeTeamSection = {
   eyebrow: "Đội ngũ",
   title: "Năng lượng lớp học đến từ người dạy theo sát",
   description:
-    "Crown nên để founder là một tín hiệu thương hiệu rõ: gần gũi, sửa bài kỹ, giải thích dễ hiểu và tạo lớp học khiến học viên dám nói.",
+    "Giáo viên tại Crown chú trọng sửa bài kỹ, giải thích dễ hiểu, theo sát tiến độ và tạo môi trường để học viên tự tin sử dụng tiếng Anh.",
 };
 
 export const homeTeacherStrengths = [
@@ -176,7 +188,7 @@ export const homeFaqSection = {
   eyebrow: "FAQ",
   title: "Câu hỏi trước khi đăng ký",
   description:
-    "Violet có FAQ gần cuối trang; với Crown, FAQ giúp giảm do dự trước khi học viên bấm đăng ký tư vấn.",
+    "Giải đáp những thắc mắc phổ biến về trình độ đầu vào, lộ trình học, cam kết đầu ra và hình thức học tại Crown English.",
 };
 
 export const homeFaqs = [
