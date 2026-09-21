@@ -9,6 +9,11 @@ const baseUrl =
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
 
+  robots: {
+    index: false,
+    follow: false,
+  },
+
   title: {
     default: "Crown English | Trung tâm tiếng Anh",
     template: "%s | Crown English",
